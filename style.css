@@ -1,0 +1,244 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(26, 25, 25);
+    list-style: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+nav {
+    position: fixed;
+    z-index: 100;
+    height: 8vh;
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+nav .nav-links ul {
+    display: flex;
+    flex-direction: row;
+}
+nav .nav-links ul li {
+    padding: 0 4px;
+    list-style: none;
+
+}
+nav .nav-links ul li img {
+    transform: scale(0.30); /*media images*/
+}
+section {
+    height: 100vh;
+    overflow: hidden;
+}
+.text h1 {
+    font-family: 'Indie Flower', cursive;  /*!important property increases its priority*/
+    font-size: 4vw;
+    color: #fff;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 20vh;
+    left: 40vw;
+}
+.bg img {
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(0.9);
+}
+.owl {
+    position: absolute !important;
+    left: 5vw !important;
+    top: 49vh !important;
+}
+.owl img {
+    width: 40%;
+    filter: brightness(0.9)
+}
+.car {
+    right: -10px !important;
+    bottom: -150px !important;
+    top: 130px !important;
+    left: unset !important;
+}
+.car img {
+    width: 200px;
+    height: 95vh;
+    z-index: 3;
+    filter: brightness(0.5);
+}
+.train {
+    position: absolute !important;
+    left: -20vw !important;
+    top: -20vh !important;
+}
+.train img {
+    width: 40%;
+    filter: brightness(0.6)
+}
+.platform {
+    position: absolute !important;
+    left: -5vw !important;
+    top: 5vh !important;
+}
+.platform img {
+    width: 30%;
+    filter: brightness(0.8)
+}
+.harry {
+    position: absolute !important;
+    left: 75vw !important;
+    top: 20vh !important;
+}
+.harry img {
+    width: 60%;
+    filter: brightness(0.9)
+}
+/*SWIPER*/
+ #sectiontwo {
+     width: 100%;
+     height: 100vh;
+     position: relative;
+ }
+ .houses {
+     position: absolute;
+     transform: scale(0.2);
+     filter: brightness(0.2);
+     top: 20vh;
+     left: 0;
+     z-index: 1;
+ }
+.magic-links {
+    width: 95%;
+    height: 5vh;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.magic-links .swiper-pagination-bullet {
+    opacity: 0.2;
+    outline: none;
+}
+.magic-links .swiper-pagination-bullet-active {
+    color: #fff;
+    opacity: 1;
+}  
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    background: transparent;
+}  
+.swiper-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px 0;
+}
+.swiper-wrapper {
+    transition-delay: 0.5s;
+}  
+.swiper-slide {
+    height: 400px !important;
+    width: 90% !important;
+    background: transparent;
+}
+.swiper-slide:nth-child(1) .slide-img {
+      background-image: url('img/gryffindor.png');
+}
+.swiper-slide:nth-child(2) .slide-img {
+    background-image: url('img/slytherin.png');
+}
+.swiper-slide:nth-child(3) .slide-img {
+    background-image: url('img/ravenclaw.png');
+}
+.swiper-slide:nth-child(4) .slide-img {
+    background-image: url('img/hufflepuff.png');
+}
+.slide-img {
+  background-repeat: no-repeat !important;
+  background-position: 'top-left';
+  background-size: 70% 95%;
+  width: 35%;
+  height: 48%;
+}
+.slide-number {
+    position: absolute;
+    top: -30px;
+    left: 30%;
+    width: 200px;
+    height: 120px;
+    overflow: hidden;
+    z-index: 10;
+}
+.slide-number p {
+    font-size: 35px;
+    font-family: 'Indie Flower', cursive !important;
+    color: #fff;
+}  
+.slide-number p span {
+    position: absolute;
+}  
+.slide-detail {
+    position: absolute;
+    top: 130px;
+    left: 30%;
+    z-index: 10;
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+}  
+.slide-detail p {
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    opacity: 0.8;
+    line-height: 30px;
+ }
+ .slide-detail p span {
+    position: absolute;
+  }
+  
+  .slide-detail-facts {
+    position: absolute;
+    top: 240px;
+    left: 30%;
+    z-index: 10;
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    color: #fff;
+  }
+  .slide-detail-facts div {
+    display: flex;
+    position: relative;
+  }
+  .slide-detail-facts div h5 {
+    margin-right: 20px;
+  }
+  
+  .slide-text {
+    position: absolute;
+    top: -130px;
+    left: 25%;
+    z-index: 4;
+    width: 200px;
+    height: 400px;
+    overflow: hidden;
+    opacity: 0.1 !important;
+  }
+  
+  .slide-text h4 {
+    color: #fff;
+    font-size: 100px;
+    position: relative;
+  }
+  .slide-text h4 span {
+    position: absolute;
+  }
+
